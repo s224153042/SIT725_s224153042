@@ -5,8 +5,7 @@ SIT725 Task 3.2P
 A simple Australian lolly shop featuring jelly beans, strawberries and cream, and jelly snakes. Built using Express and Materialize, following the week 3 practical.
 
 ## Getting started
-
-Run:
+From this folder, run:
 
 ```bash
 npm install
