@@ -1,0 +1,174 @@
+body {
+    background: #fff9f4;
+    color: #094409;
+    font-family: Arial, sans-serif
+}
+
+nav {
+    background: #619851;
+    box-shadow: none
+}
+
+.navbar-size {
+    width: 90%;
+    margin: auto
+}
+
+nav .brand-logo {
+    font-size: 1.7rem
+}
+
+.main-body {
+    padding: 40px 0 30px
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 44px
+}
+
+h1 {
+    font-size: 3.4rem;
+    line-height: 1.12;
+    font-weight: 700;
+    letter-spacing: -1.5px
+}
+
+h2 {
+    font-size: 1.8rem;
+    font-weight: 600
+}
+
+.eyebrow {
+    font-size: .8rem;
+    letter-spacing: 2px;
+    color: #094409
+}
+
+.flow-text {
+    font-size: 1.2rem;
+    line-height: 1.7
+}
+
+.materialboxed-image {
+    max-width: 100%;
+    width: 320px;
+    margin: 25px auto
+}
+
+.btn {
+    background: #619851;
+    border-radius: 8px;
+    text-transform: none
+}
+
+.btn:hover,
+.btn:focus {
+    background: #33733b
+}
+
+.card {
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 18px #79576916
+}
+
+.card.medium {
+    height: 370px
+}
+
+.card .card-image {
+    height: 220px;
+    max-height: 65%
+}
+
+.card .card-image img {
+    height: 100%;
+    object-fit: contain;
+    background: #96ab6e
+}
+
+.card .card-title {
+    font-size: 1.35rem;
+    font-weight: 600
+}
+
+.details-button {
+    padding-left: 0;
+    color: #57795c;
+    text-transform: none
+}
+
+.card-text {
+    line-height: 1.7
+}
+
+.card-reveal {
+    color: #3c4a3c
+}
+
+.modal {
+    border-radius: 16px;
+    max-width: 600px
+}
+
+input:focus {
+    border-bottom-color: #094409 !important;
+    box-shadow: 0 1px 0 #094409 !important
+}
+
+.input-field input:focus+label {
+    color: #094409 !important
+}
+
+button:focus-visible,
+a:focus-visible {
+    outline: 3px solid #094409;
+    outline-offset: 4px
+}
+
+footer {
+    padding: 20px 0 35px;
+    color: #094409;
+    font-size: .85rem
+}
+
+@media(max-width:600px) {
+    h1 {
+        font-size: 2.5rem
+    }
+
+    .main-body {
+        padding-top: 20px
+    }
+
+    nav .brand-logo {
+        left: 0;
+        transform: none;
+        font-size: 1.4rem
+    }
+
+    .hero {
+        margin-bottom: 20px
+    }
+
+    .materialboxed-image {
+        width: 230px
+    }
+
+    .modal {
+        width: 92%
+    }
+}
+
+@media(prefers-reduced-motion:reduce) {
+
+    *,
+    *:before,
+    *:after {
+        animation: none !important;
+        transition: none !important
+    }
+}

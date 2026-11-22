@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lolly Shop</title>
+  <meta name="description" content="Discover your next favourite sweet from Lolly Shop">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <nav aria-label="Main navigation"><div class="nav-wrapper navbar-size">
+    <a href="/" class="brand-logo">Oz lolly shop</a>
+    <ul class="right"><li><a href="#card-section">Shop</a></li></ul>
+  </div></nav>
+  <main class="main-body">
+    <div class="container">
+      <div class="row hero">
+        <div class="col s12 m7">
+          <p class="eyebrow">YOUR LITTLE AUSTRALIAN LOLLY SHOP</p>
+          <h1>A little bag of Aussie favourites.</h1>
+          <p class="flow-text">From jelly beans to strawberries and cream, discover lolly-shop classics to fill your pick-and-mix bag. Find a favourite to share with your mates.</p>
+          <button class="waves-effect waves-light btn modal-trigger" data-target="modal1" type="button"><i class="material-icons left" aria-hidden="true">favorite_border</i>Pick your favourite</button>
+        </div>
+        <div class="col s12 m5 center-align"><img class="materialboxed materialboxed-image" src="images/lolly-jar.jpeg" alt="A jar filled with colourful lollies"></div>
+      </div>
+      <h2>Meet the sweet collection</h2>
+      <p>Open a card to discover each treat. This is a demonstration catalogue, not an online checkout.</p>
+      <p id="load-status" role="status">Loading lollies…</p>
+      <button type="button" class="btn-flat" id="retry-button" hidden>Retry loading</button>
+      <div class="row" id="card-section"></div>
+    </div>
+    <div id="modal1" class="modal" role="dialog" aria-modal="true" aria-labelledby="wishlist-title">
+      <div class="modal-content">
+        <h2 id="wishlist-title">Your sweet pick</h2>
+        <p>Tell us your name and choose your favourite lolly. Preview only: nothing is sent or saved.</p>
+        <form id="wishlist-form">
+          <div class="input-field"><input id="customer-name" type="text" maxlength="40" required><label for="customer-name">Your name</label></div>
+          <div class="input-field"><select id="favourite-item" required><option value="" disabled selected>Choose a lolly</option></select><label for="favourite-item">Favourite lolly</label></div>
+          <button class="btn waves-effect waves-light" type="submit">Show my pick</button>
+        </form>
+        <p id="wishlist-result" role="status"></p>
+      </div>
+      <div class="modal-footer"><button class="modal-close btn-flat" type="button">Close</button></div>
+    </div>
+  </main>
+  <footer class="container">SIT725 · Task 3.2P · Express + Materialize + GET API</footer>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="js/scripts.js"></script>
+</body>
+</html>
