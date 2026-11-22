@@ -6,7 +6,7 @@ A simple Australian lolly shop featuring jelly beans, strawberries and cream, an
 
 ## Getting started
 
-From the `3.2P` folder, run:
+Run:
 
 ```bash
 npm install
@@ -23,7 +23,7 @@ You’ll need an internet connection for Materialize, jQuery and Google Fonts.
 - Click the main image to enlarge it.
 - Select “Pick your favourite” to enter your name and choose a lolly.
 
-The form only displays your selection. It doesn’t save anything or place an order.
+The form only displays your selection.
 
 ## GET endpoint
 
